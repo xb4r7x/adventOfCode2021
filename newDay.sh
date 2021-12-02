@@ -25,3 +25,7 @@ def part2Solution(lines):
 if __name__ == "__main__":
     main()
 EOF
+
+echo "Created directory: ./$1"
+echo "Created script: $scriptPath"
+echo "Fetched input file from https://adventofcode.com/2021/day/$1/input here: ./$1/input.txt"
