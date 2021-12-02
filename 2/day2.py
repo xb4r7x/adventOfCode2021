@@ -1,4 +1,3 @@
-import os
 import re
 
 with open('input.txt') as f:
