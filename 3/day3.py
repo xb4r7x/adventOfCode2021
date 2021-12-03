@@ -1,4 +1,4 @@
-#Please don't judge me for this back alley abortion of a solution... It worked, okay. Maybe I'll refactor it later.
+#It worked, okay. Maybe I'll refactor it later.
 
 with open('input.txt') as f:
     lines = [str(line.strip()) for line in f]
