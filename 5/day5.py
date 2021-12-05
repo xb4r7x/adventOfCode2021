@@ -25,8 +25,8 @@ def part1Solution(lines):
     return count
 
 def part2Solution(lines):
-    straightLines = splitLines(lines)
-    for coords in straightLines:
+    allLines = splitLines(lines)
+    for coords in allLines:
         x1, y1, x2, y2 = coords
         points = list(bresenham(int(x1), int(y1), int(x2), int(y2)))
         for point in points:
