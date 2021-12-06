@@ -19,7 +19,6 @@ def part1Solution(input):
         for x in range(newFish):
             fishes.append(8)
             newFish = 0
-#        print("Calculating day %s" % (i))
     solution=len(fishes)
     return solution
 
@@ -30,10 +29,8 @@ def part2Solution(input):
         tempCount = Counter()
         for num in count:
             if num == 0:
-                #print(count)
                 tempCount[6] += count[0]
                 tempCount[8] += count[0]
-                print(count)
             else: 
                 tempCount[num-1] += count[num]
         count = tempCount
