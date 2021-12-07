@@ -27,7 +27,6 @@ def part2Solution(input):
         if cost < lowest:
             lowest = cost
     return lowest
-    return 1
 
 if __name__ == "__main__":
     main()
