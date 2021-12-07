@@ -1,6 +1,6 @@
 from collections import Counter
 
-with open('input.txt') as f:
+with open('test.txt') as f:
     input = [int(x) for x in f.readline().strip().split(',')]
 
 def main():
@@ -24,7 +24,6 @@ def part1Solution(input):
 
 def part2Solution(input):
     count = Counter(input)
-    print(count)
     for i in range(256): 
         tempCount = Counter()
         for num in count:
@@ -34,7 +33,7 @@ def part2Solution(input):
             else: 
                 tempCount[num-1] += count[num]
         count = tempCount
-        solution = sum(tempCount.values())
+        solution = sum(count.values())
     return solution
 
 if __name__ == "__main__":
