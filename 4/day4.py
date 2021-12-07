@@ -1,6 +1,8 @@
 from io import StringIO
 import numpy as np
 
+####### WIP - Does not function yet ########
+
 with open('./input.txt') as f:
     lines = f.readlines()
 
